@@ -1,13 +1,13 @@
-package com.nedk.mdframework;
+package com.nedk.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MdframeworkApplication {
+public class ExampleApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MdframeworkApplication.class, args);
+        SpringApplication.run(ExampleApplication.class, args);
     }
 
 }
