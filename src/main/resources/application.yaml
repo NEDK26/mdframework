@@ -1,0 +1,10 @@
+server:
+  port: ${serverPort}  # 动态端口
+
+spring:
+  application:
+    name: ${serverName} # 动态应用名
+  datasource:
+    # 也可以把数据库名变成变量，比如 benefit_db 改成 ${dbName}，这里先保持简单
+    url: jdbc:mysql://localhost:3306/ ${dbName}?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    # ... 其他配置保持不变
