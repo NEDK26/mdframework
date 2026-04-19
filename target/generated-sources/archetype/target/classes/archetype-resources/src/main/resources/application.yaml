@@ -1,0 +1,17 @@
+#set( $symbol_dollar = '$' )
+server:
+  port: ${symbol_dollar}{serverPort:8080}           # 启动时可用 --serverPort=xxxx 覆盖，默认 8080
+
+spring:
+  application:
+    name: ${symbol_dollar}{serverName:myapp}        # 服务名，影响日志和注册中心
+  profiles:
+    active: ${symbol_dollar}{spring.profiles.active:dev}   # 默认激活 dev，生产部署时传 --spring.profiles.active=prod
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs

@@ -1,0 +1,28 @@
+#set( $symbol_dollar = '$' )
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/${symbol_dollar}{dbName:dev_db}?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+    username: root
+    password: 123456
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password:                      # 本地 Redis 一般不设密码，留空即可
+      database: 0                    # 使用第 0 号数据库
+      timeout: 3000ms
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml   # 扫描 mapper XML 文件
+  configuration:
+    map-underscore-to-camel-case: true           # 自动将 create_time 映射为 createTime
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  # 开发环境打印 SQL
