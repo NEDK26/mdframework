@@ -1,7 +1,7 @@
 package com.nedk.example.common.exception;
 
-import com.nedk.example.common.core.CommonResult;
-import com.nedk.example.common.core.ResultCode;
+import com.nedk.example.common.result.CommonResult;
+import com.nedk.example.common.result.ResultCode;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.BindException;

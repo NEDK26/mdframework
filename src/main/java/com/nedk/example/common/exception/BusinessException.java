@@ -1,6 +1,6 @@
 package com.nedk.example.common.exception;
 
-import com.nedk.example.common.core.IResultCode;
+import com.nedk.example.common.result.IResultCode;
 import lombok.Getter;
 
 @Getter

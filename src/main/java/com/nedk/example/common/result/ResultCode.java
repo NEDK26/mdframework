@@ -1,4 +1,4 @@
-package com.nedk.example.common.core;
+package com.nedk.example.common.result;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

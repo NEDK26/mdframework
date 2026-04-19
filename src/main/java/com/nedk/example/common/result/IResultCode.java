@@ -1,4 +1,4 @@
-package com.nedk.example.common.core;
+package com.nedk.example.common.result;
 
 public interface IResultCode {
     Integer getCode();
